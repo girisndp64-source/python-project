@@ -12,8 +12,8 @@ hot_day_num = df['temp'].idxmax() + 1
 cold_day_num = df['temp'].idxmin() + 1
 
 
-print("The hottest day recorded a temperature of:", hot_day, "°C", " on day", hot_day_num , 'day')
-print("The coldest day recorded a temperature of:", cold_day, "°C", " on day", cold_day_num , 'day')
+print("The hottest day recorded a temperature of:", hot_day, "°C", " on day", hot_day_num)
+print("The coldest day recorded a temperature of:", cold_day, "°C", " on day", cold_day_num )
 print("The average temperature is:", round(avg_temp, 2) , "°C")
 print("The total rainfall throughout the days is:", rainfall_total , "mm")
 
@@ -33,6 +33,7 @@ plt.ylabel('Rainfall (mm)')
 plt.title('Rainfall Data')
 plt.legend()
 plt.show()
+
 
 
 
